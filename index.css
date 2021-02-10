@@ -1,0 +1,49 @@
+
+body {
+    background-color: #222f3e; 
+    color: white; 
+}
+
+
+.form, 
+.greeting {
+    display: none;
+}
+
+
+.showing {
+    display: block !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1; 
+    }
+}
+
+.bgImage {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    z-index: -1;  
+    animation: fadeIn 0.5s linear; 
+}
+/*z-index: -1 put index on the top and bgimg on the background*/
+
+#js-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #js-container *
+{
+    margin: auto; 
+} */
+#js-subcontainer
+{
+    margin: auto; 
+}
